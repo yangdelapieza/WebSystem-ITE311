@@ -25,30 +25,25 @@ class Database extends Config
      * @var array<string, mixed>
      */
     public array $default = [
-        'DSN'          => '',
-        'hostname'     => 'localhost',
-        'username'     => '',
-        'password'     => '',
-        'database'     => '',
-        'DBDriver'     => 'MySQLi',
-        'DBPrefix'     => '',
-        'pConnect'     => false,
-        'DBDebug'      => true,
-        'charset'      => 'utf8mb4',
-        'DBCollat'     => 'utf8mb4_general_ci',
-        'swapPre'      => '',
-        'encrypt'      => false,
-        'compress'     => false,
-        'strictOn'     => false,
-        'failover'     => [],
-        'port'         => 3306,
-        'numberNative' => false,
-        'foundRows'    => false,
-        'dateFormat'   => [
-            'date'     => 'Y-m-d',
-            'datetime' => 'Y-m-d H:i:s',
-            'time'     => 'H:i:s',
-        ],
+        'dsn'   => '',
+       'hostname' => 'localhost', // or your database server
+       'username' => 'root', // your database username
+       'password' => '', // your database password
+       'database' => 'lms_colita', // your database name
+       'dbdriver' => 'mysqli', // or 'pdo', 'postgre', etc.
+       'dbprefix' => '',
+       'pconnect' => FALSE,
+       'db_debug' => (ENVIRONMENT !== 'production'),
+       'cache_on' => FALSE,
+       'cachedir' => '',
+       'char_set' => 'utf8',
+       'dbcollat' => 'utf8_general_ci',
+       'swap_pre' => '',
+       'encrypt' => FALSE,
+       'compress' => FALSE,
+       'strict_on' => FALSE,
+       'failover' => array(),
+       'save_queries' => TRUE
     ];
 
     //    /**

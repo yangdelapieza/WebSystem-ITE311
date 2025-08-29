@@ -2,6 +2,7 @@
 
 namespace Config;
 
+
 use CodeIgniter\Config\BaseConfig;
 
 class Migrations extends BaseConfig
@@ -15,8 +16,7 @@ class Migrations extends BaseConfig
      *
      * You should enable migrations whenever you intend to do a schema migration
      * and disable it back when you're done.
-     */
-    public bool $enabled = true;
+    $config['migration_enabled'] = TRUE;
 
     /**
      * --------------------------------------------------------------------------
@@ -26,8 +26,9 @@ class Migrations extends BaseConfig
      * This is the name of the table that will store the current migrations state.
      * When migrations runs it will store in a database table which migration
      * files have already been run.
-     */
-    public string $table = 'migrations';
+    
+    $config['migration_type'] = 'sequential';'
+     ;
 
     /**
      * --------------------------------------------------------------------------
