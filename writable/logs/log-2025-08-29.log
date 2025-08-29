@@ -36,3 +36,80 @@ in SYSTEMPATH\Database\Database.php on line 56.
  6 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
  7 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
  8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-08-29 01:26:46 --> ErrorException: Undefined property: Config\Migrations::$timestampFormat
+[Method: CLI, Route: make:migration/CreateUsersTable]
+in SYSTEMPATH\Commands\Generators\MigrationGenerator.php on line 126.
+ 1 SYSTEMPATH\Commands\Generators\MigrationGenerator.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Migrations::$timestampFormat', 'C:\\xampp\\htdocs\\ITE311-COLITA\\system\\Commands\\Generators\\MigrationGenerator.php', 126)
+ 2 SYSTEMPATH\CLI\GeneratorTrait.php(458): CodeIgniter\Commands\Generators\MigrationGenerator->basename('C:\\xampp\\htdocs\\ITE311-COLITA\\app\\Database\\Migrations\\CreateUsersTable.php')
+ 3 SYSTEMPATH\CLI\GeneratorTrait.php(128): CodeIgniter\Commands\Generators\MigrationGenerator->buildPath('App\\Database\\Migrations\\CreateUsersTable')
+ 4 SYSTEMPATH\Commands\Generators\MigrationGenerator.php(95): CodeIgniter\Commands\Generators\MigrationGenerator->generateClass([...])
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Generators\MigrationGenerator->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('make:migration', [...])
+ 7 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-08-29 01:26:59 --> ErrorException: Undefined property: Config\Migrations::$timestampFormat
+[Method: CLI, Route: make:migration/CreateUsersTable]
+in SYSTEMPATH\Commands\Generators\MigrationGenerator.php on line 126.
+ 1 SYSTEMPATH\Commands\Generators\MigrationGenerator.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Migrations::$timestampFormat', 'C:\\xampp\\htdocs\\ITE311-COLITA\\system\\Commands\\Generators\\MigrationGenerator.php', 126)
+ 2 SYSTEMPATH\CLI\GeneratorTrait.php(458): CodeIgniter\Commands\Generators\MigrationGenerator->basename('C:\\xampp\\htdocs\\ITE311-COLITA\\app\\Database\\Migrations\\CreateUsersTable.php')
+ 3 SYSTEMPATH\CLI\GeneratorTrait.php(128): CodeIgniter\Commands\Generators\MigrationGenerator->buildPath('App\\Database\\Migrations\\CreateUsersTable')
+ 4 SYSTEMPATH\Commands\Generators\MigrationGenerator.php(95): CodeIgniter\Commands\Generators\MigrationGenerator->generateClass([...])
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Generators\MigrationGenerator->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('make:migration', [...])
+ 7 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-08-29 01:30:42 --> ErrorException: Undefined property: Config\Migrations::$timestampFormat
+[Method: CLI, Route: make:migration/CreateUsersTable]
+in SYSTEMPATH\Commands\Generators\MigrationGenerator.php on line 126.
+ 1 SYSTEMPATH\Commands\Generators\MigrationGenerator.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: Config\\Migrations::$timestampFormat', 'C:\\xampp\\htdocs\\ITE311-COLITA\\system\\Commands\\Generators\\MigrationGenerator.php', 126)
+ 2 SYSTEMPATH\CLI\GeneratorTrait.php(458): CodeIgniter\Commands\Generators\MigrationGenerator->basename('C:\\xampp\\htdocs\\ITE311-COLITA\\app\\Database\\Migrations\\CreateUsersTable.php')
+ 3 SYSTEMPATH\CLI\GeneratorTrait.php(128): CodeIgniter\Commands\Generators\MigrationGenerator->buildPath('App\\Database\\Migrations\\CreateUsersTable')
+ 4 SYSTEMPATH\Commands\Generators\MigrationGenerator.php(95): CodeIgniter\Commands\Generators\MigrationGenerator->generateClass([...])
+ 5 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Generators\MigrationGenerator->run([...])
+ 6 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('make:migration', [...])
+ 7 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 8 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 9 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-08-29 01:38:34 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: CLI, Route: migrate]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Common.php(361): CodeIgniter\Database\Config::connect('default', true)
+ 3 SYSTEMPATH\Database\MigrationRunner.php(145): db_connect(null)
+ 4 SYSTEMPATH\Config\Services.php(421): CodeIgniter\Database\MigrationRunner->__construct(Object(Config\Migrations), null)
+ 5 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::migrations(Object(Config\Migrations), null, false)
+ 6 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('migrations', [...])
+ 7 SYSTEMPATH\Config\Services.php(416): CodeIgniter\Config\BaseService::getSharedInstance('migrations', null, null)
+ 8 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::migrations()
+ 9 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('migrations', [])
+10 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get('migrations')
+11 SYSTEMPATH\Commands\Database\Migrate.php(70): service('migrations')
+12 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Migrate->run([])
+13 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('migrate', [])
+14 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+15 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+16 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-08-29 01:39:58 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: CLI, Route: db:seed/UserSeeder]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Database\Seeder.php(95): CodeIgniter\Database\Config::connect('default')
+ 3 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 4 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([...])
+ 5 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 6 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2025-08-29 01:40:21 --> CodeIgniter\Exceptions\InvalidArgumentException: You have not selected a database type to connect to.
+[Method: CLI, Route: db:seed/UserSeeder]
+in SYSTEMPATH\Database\Database.php on line 56.
+ 1 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load([...], 'default')
+ 2 SYSTEMPATH\Database\Seeder.php(95): CodeIgniter\Database\Config::connect('default')
+ 3 SYSTEMPATH\Commands\Database\Seed.php(71): CodeIgniter\Database\Seeder->__construct(Object(Config\Database))
+ 4 SYSTEMPATH\CLI\Commands.php(74): CodeIgniter\Commands\Database\Seed->run([...])
+ 5 SYSTEMPATH\CLI\Console.php(47): CodeIgniter\CLI\Commands->run('db:seed', [...])
+ 6 SYSTEMPATH\Boot.php(388): CodeIgniter\CLI\Console->run()
+ 7 SYSTEMPATH\Boot.php(133): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+ 8 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
